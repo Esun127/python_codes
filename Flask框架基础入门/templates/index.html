@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}
+首页
+{% endblock %}
+
+{% block css %}
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='syl.css') }}"/>
+{% endblock %}
+{% block body %}
+<h1 id="w1">Hello {{msg}}</h1>
+<p>Do you want to <a href="{{ url_for('login') }}">login in?</a></p>
+{% endblock %}
